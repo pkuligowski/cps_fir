@@ -1,3 +1,7 @@
+%% Generator testowego sygnalu BPSK
+% Funkcja generuje zmodulowany BPSK ciag bitow, ktory zostal
+% odfiltrowany filtrem RRC. Dodatkowo symulacja kwantyzacji ADC.
+
 function probki_wyjsciowe = moduluj_bpsk(dane_do_wyslania, predkosc_transmisji, liczba_sampli, fc, fp, bity_bez_znaku)
     probki_wyjsciowe = zeros(1, liczba_sampli);
     

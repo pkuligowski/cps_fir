@@ -1,3 +1,5 @@
+%% Filtr FIR konfigurowany przez tablice wspolczynnikow
+
 function probki_wyjsciowe = filtr_fir(probki, fir_wspolczynniki)
     fir_odczepy = numel(fir_wspolczynniki);
     liczba_sampli = numel(probki);
@@ -49,6 +51,4 @@ function probki_wyjsciowe = filtr_fir(probki, fir_wspolczynniki)
         end
     end
     close(f)
-    
-    probki_wyjsciowe = probki_wyjsciowe ./ 26.25;
 end
